@@ -1,0 +1,59 @@
+<html>
+<head>
+<title>hello</title>
+<link rel="stylesheet" type="text/css" href="{{url_for('static',filename='newstyle.css')}}">
+<link rel="stylesheet" type="text/css" href="{{url_for('static',filename='font/css/all.min.css')}}">
+</head>
+<body class="bg3">
+<h1><b>LIST OF EXPENDITURE OF THIS MONTH</b></h1>
+<form action="/lists1" method="post">
+<div class="column right" style="background-image:url('exp.webp');">
+<label>Food:</label><br>
+<input type="text" name="Food" placeholder="expenses" >
+<br><br><br>
+<label>Shopping:</label><br>
+<input type="text" name="Shopping" placeholder="expenses" >
+<br><br><br>
+<label>Travelling:</label><br>
+<input type="text" name="Travelling" placeholder="expenses" >
+<br><br><br>
+<label>Rent:</label><br>
+<input type="text" name="Rent" placeholder="expenses" >
+<br><br><br>
+<label>other:</label><br>
+<input type="text" name="others" placeholder="expenses" >
+<br><br><br>
+<label>userid</label><br>
+<input type="text" name="userid" placeholder="enter user id" >
+<div id="wrapper">
+<div id="field_div">
+<input type="button" value="Add " onclick="add_field();">
+</div>
+</div>
+<script>
+function add_field()
+{
+  var total_text=document.getElementsByClassName("input_text");
+  total_text=total_text.length+1;
+  document.getElementById("field_div").innerHTML=document.getElementById("field_div").innerHTML+
+  "<p id='input_text"+total_text+"_wrapper'><input type='text' class='input_text' id='input_text"+total_text+"' placeholder='Enter Text'><input type='button' value='Remove' onclick=remove_field('input_text"+total_text+"');></p>";
+}
+function remove_field(id)
+{
+  document.getElementById(id+"_wrapper").innerHTML="";
+}
+</script>
+<br>
+<input class="button" type="submit" value="submit">
+</div>
+</form>
+<div class="column left">
+<ul>
+<li><a href="/pie">Piechart</a></li>
+<li><a href="line.html">Barchart</a></li>
+<li><a href="active.html">Monthly list</a></li>
+</ul>
+</div>
+<br>
+</body>
+</html>
