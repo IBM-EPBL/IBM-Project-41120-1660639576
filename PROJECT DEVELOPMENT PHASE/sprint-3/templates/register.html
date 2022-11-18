@@ -1,0 +1,61 @@
+<html>
+<head>
+    <title>Registration</title>
+	<link rel="stylesheet" type="text/css" href="{{url_for('static',filename='newstyle.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='font/css/all.min.css')}}">
+<nav class="header">
+<ul>
+	<li><a href="/about1" ><i class="fa-regular fa-address-card"></i>  About us</a></li>
+	<li><a href="/register1" ><i class="fa fa-edit"></i>  Register</a></li>
+	<li><a href="/login1" ><i class="fa-solid fa-right-to-bracket"></i>  login</a></li>
+	<li><a href="/" ><i class="fa-solid fa-house"></i>  Home</a></li>
+</ul>
+</nav>		
+	
+</head>
+<body class="bg2">
+<br><br><br>
+<div class="row">
+<div class="column left"></div>
+<div class="column right">
+<center>
+<fieldset class="form" style="width:500px; height:600px; ">
+<legend style="font-size:30px;">Register</legend>
+<form  action="{{ url_for('register') }}" method="post">
+    <br><br>
+	<div class="msg">{{ msg }}</div>
+	<br><br>
+    <label>User Name</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <input type="text" name="username" placeholder="Enter user name">
+    <br><br><br>
+    <label>Email</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <input type="email" name="email" placeholder="Enter email">
+    <br><br><br>
+	<label>Account Number</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <input type="text" name="accno" placeholder="Enter Account Number">
+    <br><br><br>
+	<label>Password</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<input id="password" name="password" type="password" placeholder="Enter Your Password" />
+			</br></br></br>
+	<label>Confirm Password</label>&nbsp;&nbsp;&nbsp;&nbsp;	
+			<input id="confirmpassword" name="confirmpassword" type="password" placeholder="confirm Password" />
+			</br></br></br>
+    <label>Phone Number</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <input type="text" name="no" placeholder="Enter Phone Number" >
+    <br><br><br>
+	<label>userid</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <input type="text" name="userid" placeholder="userid" >
+    <br><br><br>
+    <p><center><input class="button" type="Submit" value="REGISTER"/></center></p>
+	<p>Do you have an account? <a href="/login"> Sign In here</a></p>
+</form>
+</fieldset>
+</center>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,142 @@
+*{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+}
+.header{
+	position:fixed;
+	width:100%;
+	height:100px;
+	padding-top:0px;
+	box-shadow:black;
+	 margin-top: -10px ;
+}
+.header ul {
+
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #8f186f;
+}
+
+.header li {
+  float: right;
+}
+
+.header li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.header li a:hover {
+  background-color: #dec5d7;
+}
+
+
+.footer {
+   
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   height:10%;
+   background-color: black;
+   color: white;
+   text-align: center;
+    text-decoration: none;
+}
+
+.column {
+  float: left;
+  padding-top: 0 px;
+  
+}
+.left{
+ width:19%;	
+}
+.right{
+	width:19%;
+}
+.middle{
+	width:62%;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+.button {
+  padding: 10px 10px;
+  font-size: 15px;
+  
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #8f186f;
+  border: none;
+  border-radius: 5px;
+  
+  height:40px;
+}
+
+.button:hover {background-color: #3e8e41}
+
+.button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+.form{
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	float:left;
+	padding-left:0px;
+}
+.right2{
+	width:50%;
+}
+.left2{
+	width:50%;
+}
+
+.bg2{
+	background-image:url('image/log.jpg');
+	height:100%;
+	background-position:center;
+	background-size:cover;
+}
+.left3{
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	width:49%;
+	padding-left:20px;
+	height:90%;
+}
+.right3{
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	width:48%;
+	padding-left:20px;
+	height:90%;
+}
+.report{
+	background-image:url('image/prob2.jpg');
+	height:100%;
+	background-position:center;
+	background-size:cover;
+	
+}
+.report1{
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	width:60%;
+	float:center;
+	padding-top:50 px;
+	padding-bottom:20px;
+}
+.bg3{
+	background-image:url('image/exp.jpg');
+	height:100%;
+	background-size:cover;
+}
