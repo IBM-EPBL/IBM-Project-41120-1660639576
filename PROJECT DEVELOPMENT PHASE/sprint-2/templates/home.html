@@ -1,0 +1,46 @@
+<html>
+<head>
+<title>home</title>
+<link rel="stylesheet" type="text/css" href="{{url_for('static',filename='newstyle.css')}}">
+<link rel="stylesheet" type="text/css" href="{{url_for('static',filename='font/css/all.min.css')}}">
+<nav class="header">
+<ul>
+	<li><a href="/about1"><i class="fa-regular fa-address-card"></i>  About us</a></li>
+	<li><a href="/register1" ><i class="fa fa-edit"></i> Register</a></li>
+	<li><a href="/login1"><i class="fa-solid fa-right-to-bracket"></i>  login</a></li>
+	<li><a href="/"><i class="fa-solid fa-house"></i>  Home</a></li>
+</ul>
+</nav>
+</head>
+<body>
+<br>
+<div class="msg">{{ msg }}</div>
+ <div class="row">
+     <div class="column left" height="42" width="42" style="background-color:; height:563px;">
+	 <img src="{{url_for('static',filename='image/logo3.gif')}}">
+	 </div> 
+	 
+	 <div class="column middle" style="background-color:;">
+		<pre style="font-size:50px ; font-family:comic sans MS; "><center>Welcome to Expenses 
+Tracking Environment</center></pre>
+	 <center><img src="{{url_for('static',filename='image/money.jpeg')}}" style="width:90%; height:53%;"></center>
+	 </div>
+	
+	 <div class="column right" style="background-color:#bbb; height:563px;"><br>
+		<img src="{{url_for('static',filename='image/new_ex.gif')}}">
+	 </div>
+ </div>
+ 
+</body>
+<footer>
+<br><br>
+<div class="row footer">
+<div class="column left2">
+  <p><a href="/help1" style=" color: white;font-size:25px;">help?</a></p>
+</div>
+<div class="column right2">
+   <p><a href="/report" style=" color: white;font-size:25px;"><i class="fa fa-edit"></i>  Report a problem</a></p>
+</div>
+</div>
+</footer>
+</html>

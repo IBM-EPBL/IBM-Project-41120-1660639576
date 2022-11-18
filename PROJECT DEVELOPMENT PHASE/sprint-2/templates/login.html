@@ -1,0 +1,41 @@
+
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title> Login </title>
+		<link rel="stylesheet" type="text/css" href="{{url_for('static',filename='newstyle.css')}}">
+		<link rel="stylesheet" type="text/css" href="{{url_for('static',filename='font/css/all.min.css')}}">
+<nav class="header">
+<ul>
+	<li><a href="/about1"><i class="fa-regular fa-address-card"></i>  About us</a></li>
+	<li><a href="/register1"><i class="fa fa-edit"></i>  Register</a></li>
+	<li><a href="/login1"><i class="fa-solid fa-right-to-bracket"></i>  login</a></li>
+	<li><a href="/"><i class="fa-solid fa-house"></i>  Home</a></li>
+</ul>
+</nav>				
+	</head>
+	<body class="bg2">
+	<div class="row">
+<div class="column left"></div>
+<div class="column right">
+	</br></br></br></br></br>
+	<center>
+	<fieldset class="form" style="width:500px; height:300px; ">
+<legend style="font-size:30px;">Login</legend>
+<form action="{{ url_for('login') }}" method="post" align="center">
+        </br></br>
+		<div class="msg">{{ msg }}</div>
+		</br></br>
+        <label>User Name</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;		
+			<input id="username" name="username" type="text" placeholder="Enter Your Username" /></br></br>
+		<label>Password</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<input id="password" name="password" type="password" placeholder="Enter Your Password" /></br></br></br>
+			<input class="button" type="submit" value="Sign In"></br></br>
+			<p>Don't have an account? <a href="/register"> Sign Up here</a></p>
+		</form>
+</fieldset>
+</center>
+</div>
+</div>
+</body>
+</html>
